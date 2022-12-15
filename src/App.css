@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  background-color: rgb(213, 246, 235);
+}
+.hability{
+  display: flex;
+  width: 100%;
+
+}
+.container-one{
+  width: 80%;
+  
+}
+/* .container-father{ */
+  /* margin: 0 20px auto; */
+  /* width: 100%;
+  height: 300px;
+  
+  text-align: center; 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+  gap: 10px; 
+  margin: 0 20px auto; */
+ /* background-image: url(https://es.digitaltrends.com/wp-content/uploads/2020/05/fondos-escritorio-multipantalla-wallpaperfusion-reflective-world.jpg?resize=1680%2C480&p=1); */
+/* } */
+
+/* .my-photo{ */
+  
+  /* margin-top: 5%;
+  margin-bottom: 25%; */
+  /* display: flex; */
+  /* border: 2px solid; */
+  /* padding: 60px; */
+
+/* } */
+.imge{
+  
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+
+}
+.imgeA{
+ 
+   margin-bottom: 155px; 
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;
+  */width: 80px;
+  background-color: gold;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+ position: absolute;
+ left: 50px;
+bottom: 230px;
+}
+
+.imgeB{
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;
+  */width: 300px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  justify-content: center;
+  opacity: 0.8;
+  box-shadow:  inset 0 -2em 3em rgba(225, 170, 170, 0.1),
+  0 0  0 2px rgba(54, 25, 185, 0.666),
+  0.3em 0.4em 1em rgba(53, 49, 49, 0.3);
+ 
+ 
+}
+.imgeC{
+  border-radius: 33px;
+  /*display: block;
+  margin-left: auto;
+  */
+  position: absolute;
+  right: 360px;
+  top: 130px;
+  width: 90px;
+  
+  margin-bottom: 155px;
+  background-color: rgba(255, 217, 0, 0.977);
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+
+}
+.imgeg{
+  right: 0px;
+  top: 0px;
+  width: 130px;
+}
+.imgegm{
+  
+  right: 0px;
+  top: 0px;
+  width: 100px;
+}
+.img{
+  width: 100px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.imgew{
+width: 90px;
+position: absolute;
+left: 40px;
+bottom: 200px;
+
+}
+.vertical{
+  
+  /*border: 2px solid red;
+  */
+  /* 
+  right: 0;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; */
+  top: 65px;
+  
+  gap: 7px;
+
+ 
+}
+.imgel{
+  position: absolute;
+  width: 80px;
+  bottom: 190px;
+  right: 350px;
+  
+}
+.vertical:hover{
+  -webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;
+}
+.img1{
+  height: 70px;
+  
+}
+.img2{
+  height: 60px;
+  
+}
+.img4{
+  height: 55px;
+}
+.img1:hover{
+  cursor: pointer;
+ 
+}
+.img2:hover{
+  cursor: pointer;
+  
+}
+.img3:hover{
+ cursor: pointer;
+ 
+} 
+.cv-container{
+text-align: center;
+
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  margin: 20px 0;
+  padding: 0 40px;
+  gap: 15px;
+  padding-top: 20px;
+  background-color: rgb(45, 44, 44);
+
+}
+footer .child{
+  width: 20%;
+  color: antiquewhite;
+}
+footer .mother{
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+footer .mother img{
+  height: 60px;
+}
+
+
+
+
+
