@@ -7,6 +7,7 @@ import react from "../assets/img/react2.png";
 import js from "../assets/img/js3.png";
 import html from "../assets/img/html.png";
 import css from "../assets/img/css.png";
+import bootstrap from "../assets/img/bootstrap.png";
 import linkelind from "../assets/img/link1.png";
 import ws from "../assets/img/ws2.png";
 import gith from "../assets/img/git.png";
@@ -20,77 +21,101 @@ import proj02 from "../assets/img/proj2.jpeg";
 import proj03 from "../assets/img/proj3.jpeg";
 import proj04 from "../assets/img/proj4.jpeg";
 import proj05 from "../assets/img/proj5.jpeg";
-import bootstrap from "../assets/img/bootstrap.png";
 import Carousel from "react-bootstrap/Carousel";
+import SliderLateral from "./SliderLateral";
+
 
 const Home = () => {
+
   return (
+    
     <div>
+      
       <NavBar />
       <h1></h1>
-      <h2 className="text-bg-secndary p-20px text-white fs-2 ">
+      <h2 className="name">
         {" "}
         Developer: Miguel Antonio Martinez{" "}
       </h2>
 
       <div className="hability">
-        <div className="container-one">
-          <div className="container-father container-sm">
-            <img className="img.thumbnail mx-auto d-block" src="https://img.freepik.com/foto-gratis/fondo-borroso-oscuro-abstracto-color-textura-degradado-suave-patron-sitio-web-brillante-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral_1258-83087.jpg?auto=format&h=200" alt="" />
-            <div className="my-photo">
-              <img className="imgeA" src={antonio} alt="" />
-            </div>
+        <div className="container-profiler ">
+          <div className="simbolos">
+            <img className="imgeA" src={antonio} alt="" />
 
-            <div className="my-photo">
+            <img className="imgeC" src={mayor} alt="" />
+          </div>
+
+          
+            <a
+              href="http://wa.me/+18294616427"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img className="imgew" src={ws} alt="" />
-            </div>
-            <div className="my-photo">
-              <img className="imgeB" src={miguel} alt="" />
-            </div>
+            </a>
+          
 
-            <div className="my-photo">
-              <img className="imgeC" src={mayor} alt="" />
-            </div>
-
-            <div className="my-photo">
+          
+            <a
+              href="https://www.linkedin.com/in/miguel-antonio-martinez-901b4b24b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img className="imgel" src={linkelind} alt="" />
-            </div>
-            <div className="my-photo">
-              <img className="imgeg" src={gith} alt="" />
-            </div>
-            <div className="my-photo">
-              <img className="imgegm" src={gmail} alt="" />
-            </div>
+            </a>
+          
+
+          <div className="my-photo">
+            <img className="imgeB" src={miguel} alt="" />
           </div>
+          
+          <a
+            href="https://github.com/MMartinez2820/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="imgeg" src={gith} alt="" />
+          </a>
+          <a
+            href="mailto:201808724@p.uapa.edu.do"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="imgegm" src={gmail} alt="" />
+          </a>
+          
         </div>
-        <div className="img.thumbnail float-end">
-          <div>
-            <img className="img img1" src={react} alt="" />
-          </div>
-          <div>
-            <img className="img img2" src={js} alt="" />
-          </div>
-          <div>
-            <img className="img img3" src={html} alt="" />
-          </div>
-          <div>
-            <img className="img img4" src={css} alt="" />
-          </div>
-          <div>
-            <img className="img img5" src={bootstrap} alt="" />
-          </div>
-        </div>
+
+        <SliderLateral>
+          <img src={react} alt="" />
+          <img src={js} alt="" />
+          <img src={html} alt="" />
+          <img src={css} alt="" />
+          <img src={bootstrap} alt="" />
+        </SliderLateral>
       </div>
       <div className="cv-container">
-        <h1>CV</h1>
-        <button>Download</button>
+        <h3>CV</h3>
+        <form className="download-cv">
+          <a
+            href="https://docs.google.com/document/d/1dSiclqZr4r4fJGoRk-wdacvjAZQoREy5/edit?usp=share_link&ouid=115438702367800177254&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Download
+            {/* <button>Download</button> */}
+          </a>
+        </form>
+        {/* <button type="submit" formaction="">Download</button> */}
       </div>
-      <div className="slice">
-        <h1>Project</h1>
-        <div className="d-flex justify-content-center">
-          <Carousel>
+      <div className="porftolio">
+        <div className="container-title-project">
+          <h2 className="proj">Project</h2>
+        </div>
+        <div className="d-flex justify-content-center w-100%">
+          <Carousel className="slider">
             <Carousel.Item interval={1000}>
-              <img className="d-block w-100" src={proj02} alt="First slide" />
+              <img className="image-slider-porfolio" src={proj02} alt="First slide" />
               <Carousel.Caption>
                 <h3>First slide label</h3>
                 <p>
@@ -99,14 +124,14 @@ const Home = () => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={500}>
-              <img className="d-block w-100" src={proj01} alt="Second slide" />
+              <img className="image-slider-porfolio" src={proj01} alt="Second slide" />
               <Carousel.Caption>
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={proj05} alt="Third slide" />
+              <img className="image-slider-porfolio" src={proj05} alt="Third slide" />
               <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>
@@ -116,7 +141,7 @@ const Home = () => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={proj04} alt="Third slide" />
+              <img className="image-slider-porfolio" src={proj04} alt="Third slide" />
               <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>
@@ -126,7 +151,7 @@ const Home = () => {
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={proj03} alt="Third slide" />
+              <img className="image-slider-porfolio" src={proj03} alt="Third slide" />
               <Carousel.Caption>
                 <h3>Third slide label</h3>
                 <p>
@@ -138,34 +163,54 @@ const Home = () => {
           </Carousel>
         </div>
       </div>
-      <footer className=" container-fluid w-100 p-3 height: 100px">
-        <div className="child container-lg">
-          <h2 className="text-success text-opacity-45">About</h2>
-          <p>Soy de Republica Dominicana, me dedico a la programacion, al analisis y diseños de aplicaiones. </p>
-        </div>
-        <div className="child container-lg"> 
-          <h2 className="text-warning text-opacity-75">Technologies</h2>
+      <footer>
+        <div className="abaut-me-footer">
+          <h3 className="text-success text-opacity-45">About</h3>
           <p>
-            React, JS, HTML, CSS, Bootstrap, Tailwind, C#, SQL, MariaDB, GItHub,
-            Tableu, Trello.
+            Soy de Republica Dominicana, me dedico a la programacion, al
+            analisis y diseños de aplicaiones.{" "}
           </p>
         </div>
-        <div className="child container-lg">
-          <h2 className="text-primary text-opacity-50">Projects</h2>
-          
+        <div className="technologies-footer">
+          <h3 className="text-warning text-opacity-75">Technologies</h3>
+          <p>
+            React, JS, HTML, CSS, NodeJS, Bootstrap, Tailwind, C#, SQL Sever,
+            Postgres, MariaDB, GItHub, Tableu, Trello, Render.
+          </p>
+        </div>
+        <div className="projects-footer">
+          <h3 className="text-primary text-opacity-50">Projects</h3>
+
           <p>Desktop, App, Manejo de Api, Sistemas Facturacion.</p>
         </div>
-        <div className=" mother img.container-fluid">
-          
-            <img className="container-lg w-25 p-2 h-25 d-inline-block" src={logows} alt="" />
-            <img className="container-lg w-25 p-2 h-25 d-inline-block" src={logolink} alt="" />
-            <img className="container-lg w-25 p-2 h-25 d-inline-block" src={logogm} alt="" />
-            <img className="container-lg w-25 p-2 h-25 d-inline-block" src={logogi} alt="" />
-          
+
+        <div className="images-footer">
+          <img
+            className="container-lg d-inline-block "
+            src={logows}
+            alt=""
+          />
+          <img
+            className="container-lg d-inline-block"
+            src={logolink}
+            alt=""
+          />
+          <img
+            className="container-lg d-inline-block"
+            src={logogm}
+            alt=""
+          />
+          <img
+            className="container-lg d-inline-block"
+            src={logogi}
+            alt=""
+          />
         </div>
       </footer>
     </div>
+   
   );
 };
+
 
 export default Home;
